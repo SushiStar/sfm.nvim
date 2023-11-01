@@ -15,7 +15,7 @@ local default_mappings = {
   },
   {
     key = "<C-t>",
-    action = "tabnew",
+    action = "tabdrop",
   },
   {
     key = "<S-TAB>",

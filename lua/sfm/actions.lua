@@ -202,13 +202,13 @@ function M.vsplit()
 end
 
 -- open the file in a new tab
-function M.tabnew()
+function M.tabdrop()
   local entry = M._renderer:get_current_entry()
   if entry.is_dir then
     return
   end
 
-  open_file(entry.path, "tabedit")
+  open_file(entry.path, "tab drop")
 end
 
 --- edit file or toggle directory
@@ -1013,7 +1013,7 @@ function M.setup(explorer)
     edit = M.edit,
     vsplit = M.vsplit,
     split = M.split,
-    tabnew = M.tabnew,
+    tabdrop = M.tabdrop,
     close_entry = M.close_entry,
     toggle_entry = M.toggle_entry,
     last_sibling = M.last_sibling,
