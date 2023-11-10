@@ -3,8 +3,8 @@ local config = require "sfm.config"
 local M = {}
 
 local WIN_OPTIONS = {
-  relativenumber = false,
-  number = false,
+  relativenumber = true,
+  number = true,
   list = false,
   foldenable = false,
   winfixwidth = true,
